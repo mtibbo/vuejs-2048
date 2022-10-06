@@ -2,7 +2,7 @@
 <div>
     <div class="above-game">
       <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-      <a class="restart-button">New Game</a>
+      <a v-on:click="restart" class="restart-button">New Game</a>
     </div>
     <div class="app-notice">
     </div>
@@ -40,6 +40,9 @@ export default {
     EventBus.$off('move', this.move)
   },
   methods: {
+    restart () {
+      this.grid = Grid.init(this.yDim, this.xDim)
+    },
     createGrid () {
       this.grid = Grid.init(this.yDim, this.xDim)
     },

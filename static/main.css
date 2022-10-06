@@ -7,7 +7,7 @@ html, body {
   font-size: 18px; }
 
   #app {
-    height: 100vh;
+    height: 94vh;
     width: auto;
   }
 
@@ -528,6 +528,9 @@ hr {
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
 
+  .above-game {
+    margin-bottom: 20px;
+  }
 .above-game:after {
   content: "";
   display: block;

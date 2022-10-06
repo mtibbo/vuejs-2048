@@ -44,20 +44,20 @@ export default {
       this.grid = Grid.init(this.yDim, this.xDim)
     },
     move (direction) {
-       if (this.grid.canMove() !== true) {
+      if (this.grid.canMove() !== true) {
         alert('Perdu !')
       } else {
         switch (direction) {
           case this.$UP:
             this.grid.up()
             break
-          case this.$DOWN: 
+          case this.$DOWN:
             this.grid.down()
             break
-          case this.$RIGHT: 
+          case this.$RIGHT:
             this.grid.right()
             break
-          case this.$LEFT: 
+          case this.$LEFT:
             this.grid.left()
             break
         }

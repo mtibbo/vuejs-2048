@@ -2,14 +2,32 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
-body {
-  margin: 80px 0; }
+  #app {
+    height: 100vh;
+    width: auto;
+  }
 
+  .game {
+    height: 100%;
+    width: 100%;
+    padding-top: 80px;
+    background: #faf8ef;
+  }
+
+  .game.dark {
+    height: 100%;
+    width: 100%;
+    padding-top: 80px;
+    background: #333232;
+  }
+  .heading {
+    width: 500px;
+    margin: auto;
+  }
 .heading:after {
   content: "";
   display: block;
@@ -331,6 +349,9 @@ hr {
   .tile.tile-2 .tile-inner {
     background: #eee4da;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+  .tile.dark.tile-2 .tile-inner {
+    background: #ffffff;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
     background: #ede0c8;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
@@ -530,6 +551,34 @@ hr {
   text-align: center;
   float: right; }
 
+
+  .dark-mode-button {
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: right; }
+
+
+  .dark-mode-button.dark {
+  display: inline-block;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #776e65;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: right; }
+
 .game-explanation {
   margin-top: 50px; }
 
@@ -555,7 +604,8 @@ hr {
     min-width: 40px; }
 
   .heading {
-    margin-bottom: 10px; }
+    width: 500px;
+    margin: auto; }
 
   .game-intro {
     width: 55%;

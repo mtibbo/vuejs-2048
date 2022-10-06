@@ -1,13 +1,13 @@
-export default class Tile  {
-    constructor (value) {
-        this.value = value
-    }
+export default class Tile {
+  constructor (value) {
+    this.value = value
+  }
 
-    increment (val = 2) {
-        this.value += val
-    }
+  increment (val = 2) {
+    this.value += val
+  }
 
-    erase () {
-        this.value = 0
-    }
+  erase () {
+    this.value = 0
+  }
 }

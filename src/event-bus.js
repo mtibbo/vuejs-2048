@@ -1,3 +1,3 @@
-import Vue from 'vue';
+import Vue from 'vue'
 /* eslint-disable no-new */
 export const EventBus = new Vue()
